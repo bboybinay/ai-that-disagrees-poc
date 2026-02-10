@@ -201,7 +201,7 @@ Rules:
         model="gpt-4o-mini",
         messages=[{"role":"user", "content": prompt}],
         temperature=temperature,
-        max_tokens=550,
+        max_tokens=1000,
     )
 
     raw = resp.choices[0].message.content.strip()
