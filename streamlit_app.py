@@ -278,7 +278,7 @@ if submitted:
 
     with col2:
         st.subheader("Decision Confidence Score")
-        st.metric(label="Confidence (heuristic)", value=f"{conf}/100")
+        st.metric(label="Confidence (heuristic)", value=f"{conf}/100", help="Not a probability. Higher when inputs include specifics (numbers/timeframes/evidence), lower when vague or overconfident language is present.")
         st.progress(conf / 100)
 
         st.subheader("Bias Signals Detected")
