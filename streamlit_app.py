@@ -69,7 +69,7 @@ def confidence_score(decision_text, context_text):
     text = (decision_text or "") + " " + (context_text or "")
     t = text.lower()
 
-    score = 55
+    score = 75
     nums = count_numbers(text)
     score += clamp(nums * 4, 0, 20)
 
