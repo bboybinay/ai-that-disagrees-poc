@@ -222,8 +222,7 @@ Rules:
 # -----------------------------
 st.set_page_config(page_title="AI That Disagrees With You", layout="wide")
 st.title("AI That Disagrees With You (Intelligently) — POC")
-st.caption("Most AI accelerates decisions.")
-st.caption("This AI improves them.")
+st.caption("Most AI accelerates decisions.\nThis AI improves them.")
 
 with st.form("decision_form"):
     decision_text = st.text_area(
